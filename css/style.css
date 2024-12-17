@@ -1,0 +1,279 @@
+:root { 
+    --mavi: #2096da;
+    --boz: #777;
+}
+header {
+    background: #1a1a1a;
+    border-bottom: 5px solid var(--mavi);
+}
+nav { 
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 'logo' 'menu' 'cntc';
+    text-align: center;
+}
+#logo { 
+    grid-area: logo;
+    background: var(--mavi);
+    padding: 30px 0
+}
+#contact {
+    grid-area: cntc;
+    color: var(--boz);
+    padding: 10px 0;
+}
+#phone { 
+    display: block;
+    font: .8em 'Museo Sans';
+}
+menu { grid-area: menu;}
+menu li { padding: 5px 12px;}
+menu li a {
+    font: 1.2em 'Caviar Dreams';
+    text-transform: uppercase;
+    color: #fff;
+    padding: 6px 10px;
+}
+#icons a {
+    display: inline-grid;
+    justify-content: center;
+    align-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #2c2c2c;
+    font-size: .9em;
+}
+main {background: url('../img/mainbg.jpg');}
+main .container{padding: 45px 0;}
+#articles {
+    display: grid;
+    gap: 1em;
+    grid-template-rows:  50vh 50vh 100vh 50vh 50vh
+                         50vh 50vh 50vh 50vh 50vh
+                        100vh 50vh 50vh 50vh 50vh 50vh;
+}
+#a01 { background: url('../img/articlebg.jpg') center/cover;}
+#a02 { background: url('../img/art02.jpg') center/cover }
+#a03 { background: url('../img/art03.jpg') center/cover }
+#a04 { background: url('../img/art04.jpg') center/cover }
+#a05 { background: url('../img/art05.jpg') center/cover }
+#a06 { background: url('../img/art06.jpg') center/cover }
+#a07 { background: url('../img/articlebg.jpg') center/cover }
+#a08 { background: url('../img/art08.jpg') center/cover }
+#a09 { background: url('../img/articlebg.jpg') center/cover }
+#a10 { background: url('../img/art10.jpg') center/cover }
+#a11 { background: url('../img/art11.jpg') center/cover }
+#a12 { background: url('../img/art12.jpg') center/cover }
+#a13 { background: url('../img/art13.jpg') center/cover }
+#a14 { background: url('../img/articlebg.jpg') center/cover }
+#a15 { background: url('../img/articlebg.jpg') center/cover }
+#a16 { background: url('../img/art16.jpg') center/cover }
+#a01, #a07, #a09, #a14, #a15 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    align-content: space-between;
+    text-align: center;
+    padding: 7px 14px;
+}
+.dirnaq{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-content: center ;
+    gap: 28px;
+}
+.dirnaq  hr{
+    border: none;
+    width: 55px;
+    height: 2px;
+    background-color: #313131;
+}
+#a01, #a07, #a09, #a14, #a15 p{
+    font:  italic 1.5em "Georgia";
+    line-height: 30px;
+    color: #777;
+}
+.ftr1 {background: #1a1a1a;}
+footer .contact{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+footer .ftr1 a{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: #202022d5;
+    border-radius: 50%;
+}
+footer .ftr1 .contact i{
+    margin: auto;
+    font-size: 2em;
+    color: #777;
+}
+footer .basliq{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+footer .basliq hr{
+    width: 55px;
+    height: 2px;
+    border: none;
+    background-color: #313131;
+}
+footer h2{
+    font: 1.1rem  "Caviar Dreams";
+    color: #c5c5c5;
+    text-transform: uppercase;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    padding: 11px 0;
+    gap: 70px;
+}
+.col-1, .col-2, .col-3{padding: 22px 0;}
+.col-1{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+.galery{
+    display: flex;
+    flex-direction: row;   
+    flex-wrap: wrap ; 
+    gap: 1px;
+}
+.galery img{
+    width: 33%;
+    height: 70px;
+    object-fit: cover;
+    padding: 5px;
+    background-color: #313131;
+}
+.posts{padding-top:20px }
+.post1, .post2{
+    width: 100%;
+    padding: 1px;
+    display: grid;
+    column-gap:10px ;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+   justify-content: start;
+}
+.posts img{
+    grid-row: 1/3;
+    width: 90px;
+    height: 70px;
+    padding: 5px;
+    object-fit: cover;
+    background-color: #313131;
+}
+.posts h3{
+    font: 0.9rem "Museo Sans";
+    line-height: 20px;
+    color: #c5c5c5;
+}
+.posts h4, i {
+    display: inline-block;
+    font: 0.7rem "Museo Sans";
+    color: #777;
+}
+form{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top:20px ;
+}
+form input{
+    outline: none;
+    width: 100%;
+    height: 36px;
+    border: none;
+    background-color: #262627;
+    font: 0.8em "Museo Sans";
+    color: #c3c2c2;
+    padding: 0 14px;
+}
+button{
+    margin-top: 22px;
+    padding: 12px;
+    text-transform: uppercase;
+    background-color: #252526;
+    font-size: 0.8em "Museo Sans";
+    color: #fff;
+    border: none;
+    transition: 0.6s ease-in-out;
+}
+button:hover{
+    background-color: #151515;
+}
+.stay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ftr2{
+    background-color: var(--mavi);
+    padding: 6px 0;
+}
+.ftr2 .container{
+    display: flex;
+    justify-content: space-between;
+    font: 0.8em "Museo Sans";
+    color: #fff;
+}
+@media only screen and (min-width: 768px) {
+    .container { 
+        max-width: 960px;
+        margin: auto
+    }
+    nav { 
+        grid-template-rows: 64px 30px;
+        grid-template-columns: 130px auto;
+        grid-template-areas: 'logo cntc' 
+                             'logo menu';
+    }
+    #contact { 
+        padding: 4px 0;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        gap: 10px;
+    }
+    menu { 
+        display: grid; 
+        justify-content: end;
+        grid-template-columns: auto auto auto auto auto;
+    }
+    menu li a.active, menu li a:hover { background: var(--mavi) }
+    #articles {
+        grid-template-rows: 220px 220px 220px 220px 220px;
+        grid-template-columns: auto auto auto auto ;
+    }
+    #articles div { opacity: .5; }
+    #articles div:hover { opacity: 1; }
+    #a03 { grid-area: 1 / 3 / span 2 / span 1;}
+    #a10 { grid-area: 3 / 3 / span 1 / span 2;}
+    #a11 { grid-area: 4 / 1 / span 2 / span 1;}
+    #a16 { grid-area: 5 / 3 / span 1 / span 2;}
+    #a01, #a02, #a03, #a04, #a05, #a06, #a07, #a08, #a09, #a11, #a12, #a13, #a14, #a15 {width: 230px;}
+    .row{flex-direction: row;}
+    .col-1, .col-2, .col-3{width: 30%;}
+    form input{width: 272px;}
+    form{width: initial;}
+    .stay{align-items: end;}
+}
